@@ -26,16 +26,14 @@ const Pages = () => {
     cell: (record, index) => {
         return (
             <>
-                <BrowserRouter>
-                    <Link to={`/view/${index}`}>
-                        <button
-                            className="btn btn-primary btn-sm"
-                            style={{marginRight: '5px'}}
-                            onClick={setData(record)}>
-                                Show Data
-                        </button>
-                    </Link>
-                </BrowserRouter>
+                <Link to={`/view/${index}`}>
+                    <button
+                        className="btn btn-primary btn-sm"
+                        style={{marginRight: '5px'}}
+                        onClick={setData(record)}>
+                            Show Data
+                    </button>
+                </Link>
             </>
         );
     }
